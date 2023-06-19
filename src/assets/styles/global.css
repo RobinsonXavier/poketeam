@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: crimson;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#menu {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  padding: 0px 10px;
+  background-color: white;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  border: 0.5px lightgray solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.botao img {
+  width: 30px;
+}
+
+.botao:hover {
+  cursor: pointer;
+  transition: 100ms;
+  padding: 8px;
+}
