@@ -15,6 +15,8 @@ body {
   align-items: center;
   background-image: url('../images/pokeground.png');
   background-size: contain;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -63,6 +65,7 @@ h2 {
 
 .botao img {
   width: 30px;
+  height: 20px;
 }
 
 .botao:hover {
@@ -78,6 +81,28 @@ h2 {
   height: 100vh;
   margin-top: 60px;
   background-color: #262627;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px;
+  width: inherit;
+}
+
+.info h1 {
+  color: #fff;
+}
+
+.poke-log {
+  width: 50%;
+  border-right: 0.5px #fff solid;
+}
+
+.introducao {
+  width: 50%;
+  margin-left: 10px;
 }
 
 .busca-pokemon {

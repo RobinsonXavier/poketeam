@@ -1,3 +1,4 @@
+import { getPokemon } from "./pokemonApiController.js";
 
 function openCaptureWindow() {
   const captureButton = document.getElementById("busca");
@@ -17,5 +18,15 @@ function closeCaptureWindow() {
   })
 }
 
+function clickSearchPokemon() {
+  const searchForm = document.querySelector(".busca-pokemon form");
+  const searchButton = document.querySelector("button");
+  searchButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    getPokemon();
+  })
+}
+
 openCaptureWindow();
 closeCaptureWindow();
+clickSearchPokemon();
