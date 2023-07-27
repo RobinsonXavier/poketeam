@@ -1,4 +1,4 @@
-import { getPokemon } from "./pokemonApiController.js";
+import { getPokemon } from "./pokemonRepository.js";
 
 function openCaptureWindow() {
   const captureButton = document.getElementById("busca");
@@ -38,7 +38,6 @@ function clickSearchPokemon() {
         <h2>${pokemon.pokedata.name.toUpperCase()}</h2>
       </div>
     `
-
 
   })
 }
