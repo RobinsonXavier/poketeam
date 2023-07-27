@@ -21,9 +21,25 @@ function closeCaptureWindow() {
 function clickSearchPokemon() {
   const searchForm = document.querySelector(".busca-pokemon form");
   const searchButton = document.querySelector("button");
-  searchButton.addEventListener("click", (event) => {
+  searchButton.addEventListener("click",async (event) => {
     event.preventDefault();
-    getPokemon();
+
+    const pokemon = await getPokemon();
+
+    if(!pokemon) {
+      console.error("falha ao obter pokemon");
+      return;
+    }
+    console.log(pokemon)
+    const siteContent = document.querySelector(".conteudo");
+    siteContent.innerHTML = `
+      <div class="poke-info">
+        <img src="${pokemon.pokedata.sprites.front_default}" alt="${pokemon.pokedata.name}"/>
+        <h2>${pokemon.pokedata.name.toUpperCase()}</h2>
+      </div>
+    `
+
+
   })
 }
 

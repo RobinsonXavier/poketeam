@@ -105,6 +105,16 @@ h2 {
   margin-left: 10px;
 }
 
+.poke-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poke-info img {
+  width: 15vw;
+}
+
 .busca-pokemon {
   display: flex;
   justify-content: space-between;
