@@ -77,10 +77,20 @@ h2 {
 .conteudo {
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
   width: 80vw;
-  height: 100vh;
+  height: calc(100vh - 70px);
   margin-top: 60px;
   background-color: #262627;
+}
+
+.conteudo::-webkit-scrollbar{
+  background-color: #262627;
+}
+
+.conteudo::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .info {
@@ -96,11 +106,12 @@ h2 {
 }
 
 .poke-log {
+  height: inherit;
   width: 50%;
   border-right: 0.5px #fff solid;
 }
 
-.introducao {
+.pokemon-info {
   width: 50%;
   margin-left: 10px;
 }
